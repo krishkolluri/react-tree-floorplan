@@ -1,0 +1,122 @@
+.content {
+    padding: 10px;
+}
+
+.tabs {
+    width: 100%;
+    padding: 50px 0 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+
+    button {
+        cursor: pointer;
+        background: #fff;
+        border: none;
+        padding: 10px 25px;
+        color: #cfcfcf;
+        font-weight: bold;
+
+        &.active {
+            border-top: 1px solid #616161;
+            border-left: 1px solid #616161;
+            border-right: 1px solid #616161;
+            background: #7f7f7f;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+}
+
+code {
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Font for code */
+}
+
+.description-content {
+    max-width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+
+    .description-title {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .description-list {
+        list-style-type: none;
+        padding-left: 20px;
+
+        .description-item {
+            font-size: 1.1em;
+            margin: 10px 0;
+            color: #555;
+            line-height: 1.4;
+            padding-left: 10px;
+            position: relative;
+
+            &:before {
+                content: '•';
+                font-size: 1.5em;
+                color: #007acc;
+                position: absolute;
+                left: -15px;
+                top: -9px;
+            }
+
+            b {
+                color: #d9534f;
+            }
+        }
+
+        .description-sublist {
+            margin-top: 10px;
+            padding-left: 30px;
+
+            .description-subitem {
+                font-size: 1em;
+                margin: 8px 0;
+                color: #666;
+                position: relative;
+
+                &:before {
+                    content: '◦';
+                    font-size: 1.2em;
+                    color: #007acc;
+                    position: absolute;
+                    left: -20px;
+                    top: 2px;
+                }
+            }
+        }
+    }
+
+    .guide-title {
+        font-size: 1.5em;
+        margin: 20px 0 10px;
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .guide-video {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 700px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+}
